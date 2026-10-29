@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZimData — Zimbabwe Data Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">🇿🇼 ZimData</div>
+    <div class="tagline">Stay Connected, Anytime.</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Affordable Data Bundles</h1>
+      <p>Simple, fast and reliable data bundles for Zimbabwe.</p>
+    </section>
+
+    <section class="step">
+      <h2>1. Choose your network</h2>
+      <div class="network-grid">
+        <button class="network active" data-network="Econet">Econet</button>
+        <button class="network" data-network="NetOne">NetOne</button>
+        <button class="network" data-network="Telecel">Telecel</button>
+      </div>
+    </section>
+
+    <section class="step">
+      <h2>2. Choose validity</h2>
+      <div class="validity-grid">
+        <button class="validity active" data-validity="Daily">Daily</button>
+        <button class="validity" data-validity="Weekly">Weekly</button>
+        <button class="validity" data-validity="Monthly">Monthly</button>
+        <button class="validity" data-validity="Hourly">Hourly</button>
+      </div>
+    </section>
+
+    <section class="step">
+      <h2>3. Choose a bundle</h2>
+      <div id="packages" class="packages"></div>
+    </section>
+
+    <section id="checkout" class="checkout hidden">
+      <h2>4. Order your bundle</h2>
+      <div id="selectedPackage" class="selected-package"></div>
+
+      <label for="phone">Zimbabwe mobile number</label>
+      <input id="phone" type="tel" inputmode="numeric" placeholder="07XX XXX XXX" maxlength="10">
+
+      <div class="payment-box">
+        <strong>Payment method</strong>
+        <p>EcoCash</p>
+        <small>Complete payment using the authorized EcoCash payment instructions provided by the seller. Never enter your EcoCash PIN on this website.</small>
+      </div>
+
+      <label for="reference">EcoCash transaction/reference number</label>
+      <input id="reference" type="text" placeholder="Enter transaction/reference number">
+
+      <button id="placeOrder" class="primary">Submit Order</button>
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 ZimData. Zimbabwe only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
